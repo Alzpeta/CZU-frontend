@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Petr Podskalský, Alžběta Pokorná, Richard Markovič, Jan Poláček, Filip Boye-Kofi" />
+    <title></title>
+    <meta name="description" content="" />
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext" type="text/css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+
+      <div class="header__topbar">
+
+        <nav class="container header__nav">
+          <ul class="nav__ul">
+            <li class="nav__li">
+                <a href="index.html" class="nav__link nav__link--current">Domů</a>
+            </li>
+
+            <li class="nav__li">
+                <a href="blog.html" class="nav__link">Menu</a>
+            </li>  
+
+            <li class="nav__li">
+                <a href="buy.html" class="nav__link">Rezervace</a>
+            </li>              
+
+            <li class="nav__li">
+                <a href="aboutus.html" class="nav__link">O nás</a>
+            </li>
+
+            <li class="nav__li">
+                <a href="contact.html" class="nav__link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <section class="header__hero">
+        <h1 class="hero__headline">Název restaurace</h1>
+        <p class="subheadline hero__subheadline"> Nějaký měnící se informace, třeba teď něco o covidu</p>
+        <img class="subheadline hero__subheadline hero__image" src="images/pricing/eggplant-basic.svg"/>
+        <a href="blog.html" class="cta hero__cta">MENU</a>
+        <nav class="sidemenu">
+          <ul class="nav__ul">
+
+            <li class="nav__li">
+                <a href="#shapes" class="nav__link">↓ Denní menu</a>
+            </li>
+
+            <li class="nav__li">
+                <a href="#pricing" class="nav__link nav__link--btn">↓ Na výčepu</a>
+            </li>
+
+            <li class="nav__li">
+                <a href="#testimonials" class="nav__link nav__link--btn">↓ Reference</a>
+            </li>
+
+             <!-- <li class="nav__li">
+                <a href="#footer" class="nav__link nav__link--btn">↓ Dolů</a>
+            </li> -->
+          </ul>
+        </nav>
+      </section>
+
+    </header>
+
+    <main class="main">
+
+      <section class="index_menu" id="index_menu">
+        <h2 class="headline index_menu__headline">Denní menu</h2>
+        <table class="subheadline index_menu__subheadline">
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="beer_list" id="beer_list">
+        <h2 class="headline beer_list__headline">Název sekce</h2>
+        <p class="subheadline beer_list__subheadline">K čemu by byl dokonalý lilek, pokud by si jej lidé nemohli dovolit pořídit. Ten náš přichází ve třech variantách. Každý zákazník si přijde na své.</p>
+
+        <div class="container beer_list__container" vocab="http://schema.org/" typeof="Product">
+          <div class="beer_list__cards beer_list__card1">
+            <img src="images/pricing/eggplant-basic.svg" alt="Ikonka lilku - balení basic" property="image" />
+            <h3 property="name">Základní balení</h3>
+            <!-- <p class="cards__subheadline" property="offers" typeof="Offer">V základním balení naleznete jeden kus lilku vypěstovaný přímo Vám na míru.</p> -->
+            <!-- <a href="buy.html" class="cta cards__cta cards__cta--secondary">Koupit</a> -->
+            <!-- <span class="cards__startsat" property="priceCurrency" content="CZK">Začíná na <strong>149 Kč</strong></span> -->
+            <!-- <hr />
+            <ul class="cards__advantages">
+              <li>Malý a kompaktní</li>
+              <li>Vysoce přenositelný</li>
+              <li>Vodotěsný</li>
+
+              <li><s>Rozmanité druhy</s></li>
+              <li><s>Zbroušený povrch</s></li>
+              <li><s>Vyměnitelné šťopky</s></li>
+
+              <li><s>Extrémní množství</s></li>
+              <li><s>Exotické druhy</s></li>
+              <li><s>Zrcadlovka v ceně</s></li>
+            </ul> -->
+          </div>
+
+          <div class="beer_list__cards beer_list__card2" vocab="http://schema.org/" typeof="Product">
+            <img src="images/pricing/eggplant-pro.svg" alt="Ikonka lilku - balení Pro" property="image" />
+            <h3 property="name">Balení Pro</h3>
+            <p class="cards__subheadline" property="offers" typeof="Offer">Balení Lilek Pro Vás obšťastní větším množství unikátních hybridních odrůd.</p>
+            <!-- <a href="buy.html" class="cta cards__cta cards__cta--secondary">Koupit Pro</a>
+            <span class="cards__startsat" property="priceCurrency" content="CZK">Začíná na <strong>499 Kč</strong></span>
+            <hr />
+            <ul class="cards__advantages">
+              <li>Malý a kompaktní</li>
+              <li>Vysoce přenositelný</li>
+              <li>Vodotěsný</li>
+
+              <li>Rozmanité druhy</li>
+              <li>Zbroušený povrch</li>
+              <li>Vyměnitelné šťopky</li>
+
+              <li><s>Extrémní množství</s></li>
+              <li><s>Exotické druhy</s></li>
+              <li><s>Zrcadlovka v ceně</s></li>
+            </ul> -->
+          </div>
+
+          <div class="beer_list__cards beer_list__card3" vocab="http://schema.org/" typeof="Product">
+            <img src="images/pricing/eggplant-pro-max.svg" alt="Ikonka lilku - balení Pro Max" property="image" />
+            <h3 property="name">Balení Pro Max</h3>
+            <p class="cards__subheadline" property="offers" typeof="Offer">Pokud to s lilky myslíte vážně, balení Pro Max obsahuje všechny známé druhy světa.</p>
+            <!-- <a href="buy.html" class="cta cards__cta ">Koupit Pro Max</a>
+            <span class="cards__startsat" property="priceCurrency" content="CZK">Začíná na <strong>899 Kč</strong></span>
+            <hr />
+            <ul class="cards__advantages">
+              <li>Malý a kompaktní</li>
+              <li>Vysoce přenositelný</li>
+              <li>Vodotěsný</li>
+
+              <li>Rozmanité druhy</li>
+              <li>Zbroušený povrch</li>
+              <li>Vyměnitelné šťopky</li>
+
+              <li>Extrémní množství</li>
+              <li>Exotické druhy</li>
+              <li>Zrcadlovka v ceně</li>
+            </ul> -->
+          </div>
+
+        </div>
+      </section>
+<!-- 
+      <section class="testimonials" id="testimonials">
+        <h2 class="headline pricing__headline">Naši zákazníci, naše peníze</h2>
+          <p class="subheadline pricing__subheadline">Pečlivě sbíráme veškerou zpětnou vazbu od našich zákazníků. Lilek stále vylepšujeme, aby vyhovoval i těm nejnáročnějším požadavkům.</p>
+          <div class="container container__testimonials">
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face1.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Byl jsem příjemně překvapen kvalitou dodaného produktu. Už nikdy nebudu nakupovat u jiného dodavatele."</cite></p>
+                <span class="testimonials__name">- Josef Novotný</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face2.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Tak hladký povrch jsem nečekala, nemusí se vůbec loupat."</cite></p>
+                <span class="testimonials__name">- Pepína Kalousková</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face3.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Verze Pro překvapila. Nenašel jsem na trhu důstojnou konkurenci."</cite></p>
+                <span class="testimonials__name">- Karol Slovak</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card big__reference" typeof="Person">
+              <img src="images/people/face4.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Velmi rychlá doprava. Ve stejný den, jako jsem lilek objednal, mi zvonil kurýr u dveří."</cite></p>
+                <span class="testimonials__name">- Karel Hrots</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face5.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Prostě boží! Nejlepší je ho kombinovat s cibulí. Nasládlou chuť následuje mírné pálení."</cite></p>
+                <span class="testimonials__name">- Miroslav Paroubek</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face6.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Jde o produkt, který má velmi blízko k okurce. Jde o takovou kombinaci okurky a cukety."</cite></p>
+                <span class="testimonials__name">- Jaroslava Peake</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face7.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Nemusí se loupat"</cite></p>
+                <span class="testimonials__name">- Petr Oloupaný</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face8.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Výborně poslouží jako obušek na zlobivé děti. Doporučju všema deseti."</cite></p>
+                <span class="testimonials__name">- Tereza Krutopřísná</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face9.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Verze Pro Max vystačila naší rodině na půl roku. A to jsme nejedli nic jiného."</cite></p>
+                <span class="testimonials__name">- Ignác Krutow</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face10.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"I když jsem byla zprvu skeptická, koupě prostřední verze Pro se mi zdá jako kvalitní investice."</cite></p>
+                <span class="testimonials__name">- Jána Nána</span>
+              </div>
+            </div>
+
+            <div class="testimonials__card" typeof="Person">
+              <img src="images/people/face12.jpg" class="testimonials__img" alt="Obličej zákazníka" />
+              <div class="testimonials__textside">
+                <p class="testimonials__text" property="cite"><cite>"Nu, jde o kvalitní zemědělský produkt, co k tomu dodat. Jeho kvalita se blíží k výborným ruským cuketám."</cite></p>
+                <span class="testimonials__name">- Miloš Zemund</span>
+              </div>
+            </div>
+
+          </div>
+
+      </section> -->
+
+    </main>
+
+    <footer class="footer" id="footer">
+     
+      <div class="container container__footer">
+        <nav class="footer__nav">
+          <ul class="nav__ul">
+            <li class="nav__li">
+                <a href="index.html" class="nav__link nav__link--current">Domů</a>
+            </li>
+
+            <li class="nav__li">
+                <a href="buy.html" class="nav__link">Koupit</a>
+            </li>  
+
+            <li class="nav__li">
+                <a href="blog.html" class="nav__link">Blog</a>
+            </li>              
+
+            <li class="nav__li">
+                <a href="aboutus.html" class="nav__link">O nás</a>
+            </li>
+
+            <li class="nav__li">
+                <a href="contact.html" class="nav__link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        
+          <div class="footer__copyright">
+            <p>Jedná se o studenský projekt</p>
+            <p>Copyright ©2021</p>
+  
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>
+    
