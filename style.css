@@ -117,8 +117,7 @@ Header + nav
   height: 80vh;
   min-height: 710px;
   background-color: #593e4d;
-  /* background: url(images/eggplant-bg.png) center 64% no-repeat, url("images/hero-bg.svg"), -o-radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%); */
-  /* background: url(images/eggplant-bg.png) center 64% no-repeat, url("images/hero-bg.svg"), radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%); */
+ 
 }
 .hero__headline {
   padding: 60px 0px 38px 0px;
@@ -278,10 +277,6 @@ Beer images
 Beer list
 ################################################################################################################################*/
 
-/* .pricing {
-  background: url("images/pricing-bg.svg"), -o-radial-gradient(circle, rgb(184, 236, 108) 0%, rgb(125, 179, 48) 68%);
-  background: url("images/pricing-bg.svg"), radial-gradient(circle, rgb(184, 236, 108) 0%, rgb(125, 179, 48) 68%);
-} */
 
 .beer_list__headline {
   padding: 64px 0px 38px 0px;
@@ -343,188 +338,6 @@ Beer list
           flex: 1;
 }
 
-/* .pricing__cards hr {
-  margin: 16px 24px;
-
-  border: 0.5px solid #b6b6b6;
-} */
-
-/*################################################################################################################################
-Cards
-################################################################################################################################*/
-
-/* .cards__subheadline {
-  margin: 14px 0px;
-
-  text-align: center;
-
-  color: #4e4e4e;
-}
-
-.cards__cta {
-  position: relative;
-
-  margin: 16px auto;
-
-  border: 3px solid #7db330;
-  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.cards__cta--secondary {
-  color: #7db330;
-  border: 3px solid #7db330;
-  background-color: white;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.cards__startsat {
-  margin: 0px auto;
-
-  font-size: 1.4rem;
-  font-weight: normal;
-
-  text-align: center;
-
-  color: #4e4e4e;
-}
-
-.cards__advantages {
-  margin: 0px auto;
-
-  font-weight: 300;
-  line-height: 4rem;
-
-  list-style: none;
-
-  text-align: left;
-
-  color: #4d8202;
-}
-
-.cards__advantages s {
-  color: #4e4e4e;
-}
-
-.cards__advantages li:before {
-  display: inline-block;
-
-  width: 1em;
-  margin-left: -1em;
-
-  font-weight: bold;
-
-  content: "\2022";
-
-  color: #b6b6b6;
-} */
-
-/*################################################################################################################################
-Testimonials
-################################################################################################################################*/
-
-/* .testimonials {
-  overflow: hidden;
-
-  position: relative;
-
-  padding-bottom: 124px;
-}
-
-.testimonials .eggplblur1 {
-  top: -80px;
-  right: 0px;
-
-  width: 400px;
-  height: 400px;
-
-  background: url(images/eggplant-blur1.png) center center no-repeat;
-}
-
-.testimonials .eggplblur2 {
-  bottom: -300px;
-  left: -12%;
-
-  width: 640px;
-  height: 640px;
-
-  background: url(images/eggplant-blur2.png) center center no-repeat;
-}
-
-.container__testimonials {
-  display: -ms-grid;
-  display:     grid;
-
-  margin-top: 64px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: ". . ." "big__reference big__reference ." ". . ." ". . .";
-}
-
-.testimonials__card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-          flex-direction: row;
-
-  margin: 16px 32px;
-
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-          align-content: stretch;
-}
-
-.big__reference {
-  grid-area: big__reference;
-  background: #efefef;
-  padding: 20px;
-}
-
-.testimonials__img {
-  width: 15%;
-  height: auto;
-
-  border-radius: 50%;
-}
-
-.testimonials__textside {
-  margin-left: 8px;
-}
-
-.testimonials__text {
-  margin-bottom: 8px;
-
-  font-size: 1.5rem;
-  line-height: 2.4rem;
-
-  color: #213801;
-}
-
-.testimonials__name {
-  font-weight: bold;
-  font-style: italic;
-
-  color: #4d8202;
-} */
 
 /*################################################################################################################################
 Footer
@@ -593,17 +406,7 @@ Landing page responsivity
     -webkit-flex-direction: column; */
   }
 
-  /* .container__testimonials {
-    grid-template-columns: repeat(2, 1fr);
-    -ms-grid-columns: (1fr)[2];
-    grid-template-areas: initial;
-  }
 
-  .big__reference {
-    grid-area: initial;
-    background: initial;
-    padding: initial;
-  } */
 }
 
 
@@ -615,10 +418,6 @@ Landing page responsivity
     line-height: 4rem;
   }
 
-  /* .header__hero { */
-    /* background: url(images/eggplant-bg.png) center 64% / 450px auto no-repeat, url("images/hero-bg.svg"), -o-radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%); */
-    /* background: url(images/eggplant-bg.png) center 64% / 450px auto no-repeat, url("images/hero-bg.svg"), radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%); */
-  /* } */
 
   .container.header__nav {
     padding: 0px;
@@ -642,40 +441,16 @@ Landing page responsivity
     text-align: center;
   }
 }
-/* 
-@media (max-width: 650px) {
-  .container__testimonials {
-    grid-template-columns: repeat(1, 1fr);
-    -ms-grid-columns: (1fr)[1];
-  }
 
-} */
 
 @media (max-width: 500px) {
-  /* .header__hero {
-    background: url(images/eggplant-bg.png) center 64% / 75% auto no-repeat, url("images/hero-bg.svg"), -o-radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%);
-    background: url(images/eggplant-bg.png) center 64% / 75% auto no-repeat, url("images/hero-bg.svg"), radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%);
-  } */
+
 
   .subheadline {
     font-size: 1.65rem;
     line-height: 2.7rem;
   }
 
-  /* .subheadline,
-  .cards__subheadline,
-  .cards__advantages {
-    font-size: 1.65rem;
-    line-height: 2.7rem;
-  } */
-
-  /* .shapes {
-    background: url(images/shapes-bg.svg) center 275px no-repeat;
-  } */
-/* 
-  .shapes__subheadline {
-    margin-bottom: 175px;
-  } */
 
   .container__footer {
     padding: 0px;
@@ -689,10 +464,7 @@ Landing page responsivity
 }
 
 @media (max-height: 570px) {
-  /* .header__hero {
-    background: url(images/eggplant-bg.png) center 75% / 70% auto no-repeat, url("images/hero-bg.svg"), -o-radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%);
-    background: url(images/eggplant-bg.png) center 75% / 70% auto no-repeat, url("images/hero-bg.svg"), radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%);
-  } */
+
 
   .hero__headline {
     padding: 11px 0px 8px 0px;
@@ -703,7 +475,6 @@ Landing page responsivity
   }
 }
 
-/*End of landing page ################################################################################################################################*/
 
 /*################################################################################################################################
 Team
@@ -865,198 +636,9 @@ Contact responsivity
 /*################################################################################################################################
 Menu
 ################################################################################################################################*/
-/* 
-.menu .header__hero {
-  height: 800px;
-
-  background: url("images/hero-bg.svg"), -o-radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%);
-  background: url("images/hero-bg.svg"), radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%);
-}
-
-.blog .hero__headline {
-  padding: 24px 32px;
-
-  line-height: 6rem;
-
-  text-align: left;
-
-  color: black;
-}
-
-.blog .hero__subheadline {
-  padding: 10px 32px;
-
-  text-align: left;
-
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.blog .aside__news .hero__subheadline {
-  padding: 0px 16px 32px 32px;
-}
 
 
-.hero__articles {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
 
-  margin-top: 70px;
-}
-
-.big__new {
-  width: 33%;
-
-  background-color: white;
-}
-
-.big__new img {
-  width: 100%;
-}
-
-.big__new {
-  overflow: hidden;
-
-  border-radius: 12px;
-  -webkit-box-shadow: 0px 32px 50px #0000004d;
-          box-shadow: 0px 32px 50px #0000004d;
-
-  -webkit-box-flex: 45%;
-  -webkit-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-}
-
-.aside__news {
-  -webkit-box-flex: 55%;
-  -webkit-flex: 55%;
-      -ms-flex: 55%;
-          flex: 55%;
-}
-
-.aside__new {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  overflow: hidden;
-
-  margin-top: 0px;
-  margin-left: 32px;
-
-  border-radius: 12px;
-  background-color: white;
-  -webkit-box-shadow: 0px 32px 50px  #0000004d;
-          box-shadow: 0px 32px 50px  #0000004d;
-}
-
-
-.aside__new .headline,
-.other__articles .headline {
-  margin: 16px 0px;
-  padding: 10px 32px;
-
-  font-weight: normal;
-  line-height: 4rem;
-
-  text-align: left;
-
-  color: black;
-}
-
-.other__articles .subheadline {
-  max-width: initial;
-  padding-top: 0px;
-}
-
-.art1 {
-  margin-bottom: 32px;
-}
-
-.aside__new img {
-  width: 50%;
-  height: 50%;
-}
-
-.text__wrapper,
-.aside__new img {
-  -webkit-box-flex: 50%;
-  -webkit-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-}
-
-.other__articles {
-  margin: 48px auto;
-}
-
-.other__articles > article {
-  margin: 46px 0px;
-} */
-
-/*################################################################################################################################
-Blog responsivity
-################################################################################################################################*/
-
-/* @media (max-width: 900px) {
-  .blog .hero__articles {
-    display: initial;
-  }
-
-  .blog .header__hero {
-    height: initial;
-  }
-
-  .big__new {
-    width: 90%;
-    margin: 24px auto;
-    padding-bottom: 24px;
-
-    -webkit-box-flex: initial;
-    -webkit-flex: initial;
-        -ms-flex: initial;
-            flex: initial;
-  }
-
-  .aside__new {
-    margin: 24px auto;
-  }
-
-  .text__wrapper,
-  .aside__new img {
-    -webkit-box-flex: initial;
-    -webkit-flex: initial;
-        -ms-flex: initial;
-            flex: initial;
-  }
-
-  .aside__news {
-    width: 90%;
-    margin: 24px auto;
-
-    -webkit-box-flex: initial;
-    -webkit-flex: initial;
-        -ms-flex: initial;
-            flex: initial;
-  }
-
-  .blog .hero__headline {
-    font-size: 3.6rem;
-  }
-
-  .aside__new .headline,
-  .other__articles .headline {
-    font-size: 2.4rem;
-    line-height: 3rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .aside__new img {
-    display: none;
-  }
-} */
 
 /*################################################################################################################################
 reservation
@@ -1064,8 +646,6 @@ reservation
 
 .reservation .header__hero {
   height: initial;
-
-  /* background: #f3f3f3 url("images/parts-bg.png") 140% -35% / 65% auto no-repeat; */
 }
 
 .reservation__container {
