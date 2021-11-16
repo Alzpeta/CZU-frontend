@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Petr Podskalský, Alžběta Pokorná, Richard Markovič, Jan Poláček, Filip Boye-Kofi" />
-
     <title></title>
     <meta name="description" content="" />
     
@@ -15,7 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body class="side">
+  <body class="menu">
     <header class="header">
 
       <div class="header__topbar">
@@ -27,7 +26,7 @@
             </li>
 
             <li class="nav__li">
-                <a href="menu.html" class="nav__link">Menu</a>
+                <a href="menu.html" class="nav__link  nav__link--current">Menu</a>
             </li>  
 
             <li class="nav__li">
@@ -39,66 +38,19 @@
             </li>
 
             <li class="nav__li">
-                <a href="contact.html" class="nav__link  nav__link--current">Kontakt</a>
+                <a href="contact.html" class="nav__link">Kontakt</a>
             </li>
           </ul>
         </nav>
 
       </div>
 
-      <section class="header__hero">
-        <div class="side__container">
-          <div class="contact__bg"></div>
-
-          <div class="side__text">
-            <div class="text__container">
-              <h1 class="hero__headline">Nevájte nás kontaktovat.</h1>
-            
-              <div class="address__container">
-                <address class="subheadline hero__subheadline">
-                  Ústavní 91, <br>
-                  181 00 Praha 8, <br>
-                  Česká republika
-                </address>
-
-                <div class="subheadline hero__subheadline">
-                 telefon: 721 842 515 <br/>
-                 email: EEEE@@@@ <br/>
-                 ičo: xxxx <br/>
-                </div>
-
-                <div class="subheadline hero__subheadline">
-                  Jednatel: XXXXXX YYYYYY <br>
-                  Provozni: xxxxx yyyyyy
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-        
-      </section>
-
     </header>
 
     <main class="main">
-      <div class="map">
-        <div class="iframe-maps">
-        <iframe src="https://maps.google.com/maps?q=bohnice&t=&z=15&ie=UTF8&iwloc=&output=embed" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <style type="text/css">
-          .iframe-maps iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100% !important;
-            height: 400px !important;
-          }      
-        </style>
-      </div>
     </main>
-   
+
+
     <footer class="footer" id="footer">
      
       <div class="container container__footer">
@@ -107,23 +59,27 @@
             <li class="nav__li">
                 <a href="index.html" class="nav__link">Domů</a>
             </li>
-            <li class="nav__li">
-              <a href="menu.html" class="nav__link">Menu</a>
-          </li>    
+
+            
 
             <li class="nav__li">
-                <a href="reservation.html" class="nav__link">Rezervace</a>
-            </li>  
-
-                    
+                <a href="menu.html" class="nav__link  nav__link--current">Menu</a>
+            </li>
+            <li class="nav__li">
+              <a href="reservation.html" class="nav__link">Rezervace</a>
+          </li>                
 
             <li class="nav__li">
                 <a href="aboutus.html" class="nav__link">O nás</a>
             </li>
 
             <li class="nav__li">
-                <a href="contact.html" class="nav__link  nav__link--current">Kontakt</a>
+                <a href="contact.html" class="nav__link">Kontakt</a>
             </li>
+
+            <li class="nav__li">
+              <a href="contact.html" class="nav__link">Admin</a>
+          </li>
           </ul>
         </nav>
         

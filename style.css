@@ -863,10 +863,10 @@ Contact responsivity
 }
 
 /*################################################################################################################################
-Blog
+Menu
 ################################################################################################################################*/
 /* 
-.blog .header__hero {
+.menu .header__hero {
   height: 800px;
 
   background: url("images/hero-bg.svg"), -o-radial-gradient(circle, rgba(129,95,114,1) 0%, rgba(89,63,78,1) 68%);
@@ -1059,16 +1059,16 @@ Blog responsivity
 } */
 
 /*################################################################################################################################
-Buy
+reservation
 ################################################################################################################################*/
 
-.buy .header__hero {
+.reservation .header__hero {
   height: initial;
 
   /* background: #f3f3f3 url("images/parts-bg.png") 140% -35% / 65% auto no-repeat; */
 }
 
-.buy__container {
+.reservation__container {
   /* display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox; */
@@ -1126,7 +1126,7 @@ Buy
   text-align: left;
 }
 
-.buy .subheadline {
+.reservation .subheadline {
   margin-bottom: 32px;
 
   text-align: left;
@@ -1170,7 +1170,7 @@ caption {
   font-weight: bold;
 }
 
-.buy .cta {
+.reservation .cta {
   width: 200px;
   margin: 24px 0px 0px 0px;
 }
@@ -1187,11 +1187,11 @@ caption {
 }
 
 /*################################################################################################################################
-Buy responsivity
+reservation responsivity
 ################################################################################################################################*/
 
 @media (max-width: 900px) {
-  .buy__container {
+  .reservation__container {
     display: block;
 
     padding: 0px;
@@ -1240,7 +1240,7 @@ Buy responsivity
 }
 
 @media (max-width: 500px) {
-  .buy__container {
+  .reservation__container {
     display: block;
 
     padding: 0px;

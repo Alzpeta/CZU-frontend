@@ -1,29 +1,11 @@
 <!DOCTYPE html>
-<!--[if IE]>
-  <script>
-    alert("You are using outdated browser. Web page may not display correctly. Please download newer browser.");
-  </script>
-<![endif]-->
-
 <html lang="cs">
   <head>
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
     <meta charset="utf-8" />
-    <link rel="alternate" href="en" hreflang="en" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="apple-mobile-web-app-title" content="Svět lilků" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="author" content="Filip Benda, Jan Poláček" />
-
-    <title>Koupit lilek | Svět lilků</title>
-    <meta name="description" content="Lilek vejcoplodý, jinak také baklažán, je jednoletá rostlina z rodu lilků. Jeho slastnou chuť nabízíme ve třech variantách." />
+    <meta name="author" content="Petr Podskalský, Alžběta Pokorná, Richard Markovič, Jan Poláček, Filip Boye-Kofi" />
+    <title></title>
+    <meta name="description" content="" />
     
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
@@ -32,9 +14,8 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-
   </head>
-  <body class="buy">
+  <body class="reservation">
     <header class="header">
 
       <div class="header__topbar">
@@ -42,15 +23,15 @@
         <nav class="container header__nav">
           <ul class="nav__ul">
             <li class="nav__li">
-                <a href="index.html" class="nav__link">Domů</a>
+                <a href="index.html" class="nav__link ">Domů</a>
             </li>
 
             <li class="nav__li">
-                <a href="buy.html" class="nav__link nav__link--current">Koupit</a>
+                <a href="menu.html" class="nav__link">Menu</a>
             </li>  
 
             <li class="nav__li">
-                <a href="blog.html" class="nav__link">Blog</a>
+                <a href="reservation.html" class="nav__link nav__link--current">Rezervace</a>
             </li>              
 
             <li class="nav__li">
@@ -66,17 +47,12 @@
       </div>
 
       <section class="header__hero">
-        <div class="container buy__container">
+        <div class="container reservation__container">
           <div class="image_wrapper">
             <img src="images/eggplant-detail.jpg" class="image__detail" alt="Detailní fotka lilku" />
-            <!-- <div class="smallimage_wrapper">
-              <img src="images/eggplant-detail2.jpg" class="image__detail" alt="Detailní fotka lilku 2" />
-              <img src="images/eggplant-detail3.jpg" class="image__detail" alt="Detailní fotka lilku 3" />
-            </div> -->
           </div>
           <div class="description">
             <h1 class="headline">Lilek Basic</h1>
-            <!-- <p class="subheadline">V základním balení naleznete jeden kus lilku vypěstovaný přímo Vám na míru.</p> -->
             <form>
               <table>
                 <td><label for="variant">Typ balení</label></td>
@@ -87,13 +63,7 @@
                   <td><label for="quantity">Počet balení</label></td>
                   <td><input type="number" name="quantity" id="quantity" value="1"  min="1" max="50"></td>
               </tr>    
-              <!-- <label for="fname">Neco neco :</label>
-              <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
-
-              <label for="fname">First name:</label><br>
-              <input type="text" id="fname" name="fname"><br>
-              <label for="lname">Last name:</label><br>
-              <input type="text" id="lname" name="lname"> -->
+              
             </table>
             </form>
             <!-- <table>
@@ -137,7 +107,6 @@
               </tr>
             </table> -->
 
-            <strong class="transport">Doprava zdarma</strong>
             <a href="#" class="cta">Do košíku</a>
             </div>
         </div>
@@ -146,26 +115,22 @@
     </header>
 
     <footer class="footer" id="footer">
+     
       <div class="container container__footer">
-        <div class="footer__copyright">
-          <p>Jde o studenský projekt, žádné lilky zde bohužel nekoupíte :(</p>
-          <p>Copyright ©2019 All rights reserved</p>
-
-        </div>
-
         <nav class="footer__nav">
           <ul class="nav__ul">
             <li class="nav__li">
                 <a href="index.html" class="nav__link">Domů</a>
             </li>
+            <li class="nav__li">
+              <a href="menu.html" class="nav__link">Menu</a>
+          </li>    
 
             <li class="nav__li">
-                <a href="buy.html" class="nav__link nav__link--current">Koupit</a>
+                <a href="reservation.html" class="nav__link nav__link--current">Rezervace</a>
             </li>  
 
-            <li class="nav__li">
-                <a href="blog.html" class="nav__link">Blog</a>
-            </li>              
+                    
 
             <li class="nav__li">
                 <a href="aboutus.html" class="nav__link">O nás</a>
@@ -176,7 +141,12 @@
             </li>
           </ul>
         </nav>
-
+        
+          <div class="footer__copyright">
+            <p>Jedná se o studenský projekt</p>
+            <p>Copyright ©2021</p>
+  
+          </div>
       </div>
     </footer>
   </body>
