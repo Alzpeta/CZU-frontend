@@ -49,26 +49,49 @@
       <section class="header__hero">
         <div class="container reservation__container">
           <div class="image_wrapper">
-            <img src="images/eggplant-detail.jpg" class="image__detail" alt="Detailní fotka lilku" />
+            <img src="stul.jpg" class="image__detail" alt="Detailní fotka lilku" />
           </div>
           <div class="description">
-            <h1 class="headline">Lilek Basic</h1>
+            <h1 class="headline">Rezervace stolu</h1>
             <form>
-              <table>
-                <td><label for="variant">Typ balení</label></td>
-                <td>
-                  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
-                </td>
+              <table class="reservation_table">
                 <tr>
-                  <td><label for="quantity">Počet balení</label></td>
-                  <td><input type="number" name="quantity" id="quantity" value="1"  min="1" max="50"></td>
+                  <td><label for="table_type">Typ stolu</label></td>
+                 <td> <select name="table_type" id="cars">
+                    <option value="u_steny">U stěny</option>
+                    <option value="v_prostoru">V prostoru</option>
+                  </select></td>
+                </tr>
+               
+                <tr>
+                  <td><label for="quantity">Počet lidí</label></td>
+                  <td><input type="number" name="quantity" id="quantity" value="1"  min="1" max="20"></td>
               </tr>    
-              
+              <tr>
+                <td><label for="date">Termín</label></td>
+                <td><input type="datetime-local" name="date" id="date"></td>
+            </tr>    
+            <tr>
+              <td><label for="first_name">Křestní jméno</label></td>
+              <td><input type="text" name="first_name" id="first_name"></td>
+            </tr>    
+            <tr>
+              <td><label for="last_name">Příjmení</label></td>
+              <td><input type="text" name="last_name" id="last_name"></td>
+            </tr>    
+            <tr>
+              <td><label for="phone">Telefon</label></td>
+              <td><input type="tel" name="phone" id="phone"></td>
+            </tr>    
+            <tr>
+              <td><label for="email">E-mail</label></td>
+              <td><input type="email" name="email" id="email"></td>
+            </tr>    
             </table>
             </form>
           
 
-            <a href="#" class="cta">Do košíku</a>
+            <a href="#" class="cta">Rezervovat</a>
             </div>
         </div>
       </section>

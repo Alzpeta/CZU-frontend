@@ -18,7 +18,35 @@ html {
 
   /* scroll-behavior: smooth; */
 }
+.sub-menu {
+	padding: 10px;
+	width: 120px;
+	/* position: absolute; */
+  text-decoration: none;
+  position: absolute;
+  /* overflow: hidden; */
+  z-index: 1;
+  background-color: #415f03;
 
+  
+}
+.sub-menu li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.sub-menu ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+
+} 
+
+.hidden {
+	display: none;
+}
+.visible {
+	display: visible;
+}
 body {
   min-width: 350px;
   font-family: "Open Sans", sans-serif;
@@ -29,17 +57,22 @@ body {
 cite {
   font-style: normal;
 }
-
+main {
+  background-color: #f6fee6;
+}
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h6,
+h5
+ {
   font-family: "Playfair Display", serif;
   text-align: center;
 }
-
+h4 {
+  font-family: "Playfair Display", serif;
+  text-align: left;
+}
 .headline {
   font-size: 3.6rem;
   font-weight: bold;
@@ -66,7 +99,7 @@ h6 {
 
   color: white;
   border-radius: 50px;
-  background-color: #7db330;
+  background-color: #5F0341;
   /* -webkit-box-shadow: 0px 8px 48px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 8px 48px rgba(0, 0, 0, 0.25); */
 }
@@ -104,7 +137,7 @@ Side menu
 }
 
 .sidemenu .nav__link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 1);
 }
 
 /*################################################################################################################################
@@ -113,10 +146,10 @@ Header + nav
 
 .header__hero {
   position: relative;
-
+  
   height: 80vh;
   min-height: 710px;
-  background-color: #593e4d;
+  background-color: #415f03;
  
 }
 .hero__headline {
@@ -129,7 +162,7 @@ Header + nav
 }
 
 .hero__subheadline {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hero__image {
@@ -137,8 +170,8 @@ Header + nav
   display: -webkit-flex;
   display: -ms-flexbox; */
   display: flex;
-  max-width: 50%;
-  height: 50%;
+  max-width: 60%;
+  /* height: 40%; */
   margin: 0px auto;
 }
 
@@ -157,7 +190,7 @@ Header + nav
 }
 
 .cta:hover {
-  background-color: #6ba021;
+  background-color: #5F0341;
   color: white;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
@@ -169,7 +202,7 @@ Header + nav
 .header__topbar {
   margin: 0px auto;
 
-  background-color: #593e4d;
+  background-color: #415f03;
 }
 
 .nav__ul {
@@ -191,9 +224,7 @@ Header + nav
           flex-wrap: wrap;
 }
 
-.nav__li {
-  padding: 12px;
-}
+
 
 .nav__link {
   font-size: 1.6rem;
@@ -202,7 +233,11 @@ Header + nav
 
   color: rgba(255, 255, 255, 0.8);
 }
-
+.nav__li {
+  padding: 12px;
+  font-size: 2rem;
+  
+}
 .nav__link:hover {
   color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid white;
@@ -261,8 +296,10 @@ Beer images
   grid-template-columns: 3fr 2fr;
 }
 
+
 .container__images img {
   height: auto;
+  max-width: 100%;
 }
 
 .container__images img:nth-of-type(1) {
@@ -276,7 +313,11 @@ Beer images
 /*################################################################################################################################
 Beer list
 ################################################################################################################################*/
-
+.beer_list__container img {
+  margin:auto;
+  max-width: 50%;
+  /* max-height: 50%; */
+  }
 
 .beer_list__headline {
   padding: 64px 0px 38px 0px;
@@ -307,7 +348,13 @@ Beer list
   -ms-flex-pack: justify; /*???*/
   justify-content: space-between;
 }
+.cards__subheadline {
+  margin: 14px 0px;
 
+  text-align: center;
+
+  color: #4e4e4e;
+}
 .beer_list__cards {
   /* display: -webkit-box;
   display: -webkit-flex;
@@ -344,7 +391,7 @@ Footer
 ################################################################################################################################*/
 
 .footer {
-  background: #593e4d;
+  background: #415f03;
 } 
 
 .container__footer {
@@ -395,7 +442,18 @@ Landing page responsivity
     display: none;
   }
 }
-
+@media (max-width: 900px) {
+  .hero__image {
+     /* display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox; */
+  display: flex;
+  margin-top: 50px;
+  max-width: 100%;
+  /* height: 40%; */
+  /* margin: 0px auto; */
+  }
+}
 @media (max-width: 900px) {
   .beer_list__container {
             flex-direction: column;
@@ -563,7 +621,7 @@ Team
   width: 100%;
   height: auto;
 
-  background: url("images/team-bg.jpg") center center;
+  background: url("chef.jpg") center center;
   background-size: cover;
 }
 
@@ -601,7 +659,7 @@ Contact
   width: 100%;
   height: auto;
 
-  background: url("images/contact-bg.jpg") center center;
+  background: url("restaurace.jpg") center center;
   background-size: cover;
 }
 
@@ -643,9 +701,17 @@ Menu
 /*################################################################################################################################
 reservation
 ################################################################################################################################*/
+.reservation_table tr {
+  border: none;
+  background-color:#D3D9C7;
 
+}
+.reservation_table td {
+  border: none;
+}
 .reservation .header__hero {
   height: initial;
+  background-color:#f6fee6
 }
 
 .reservation__container {
@@ -661,7 +727,7 @@ reservation
   /* border-radius: 12px;
   background: rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.06); */
-          box-shadow: 0px 16px 52px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 16px 52px #D3D9C7;
 
   /* -webkit-backdrop-filter: blur(20px); */
           backdrop-filter: blur(20px);
@@ -689,7 +755,7 @@ reservation
   padding: 64px;
 
   border-radius: 12px;
-  background-color: rgba(247, 247, 247, 0.8);
+  background-color: #D3D9C7;
 
   /* -webkit-box-flex: 66%;
   -webkit-flex: 66%;
@@ -711,19 +777,19 @@ reservation
 
   text-align: left;
 }
-
+/* 
 .smallimage_wrapper > img {
   width: 30%;
   height: auto;
   margin-top: 8px;
   margin-right: 12px;
-}
+} */
 
 select,
 input {
   height: 42px;
   padding: 8px;
-
+  
   font-size: inherit;
   line-height: 3rem;
 
@@ -736,19 +802,42 @@ input {
 /* input {
   width: 64px;
 } */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  
+}
+.table_resp {
+  overflow-x:auto;
+}
 
 table tr {
+  background-color: white;
+  color: black;
   height: 46px;
 }
-
+table th {
+  background-color:#f6fee6 ;
+}
 table tr td {
-  min-width: 200px;
+  min-width: 100px;
+  
+}
+table tr td{
+  border: 2px solid #ddd;
+  /* padding: 8px; */
 }
 
-caption {
+table tr .food_name {
+  text-align: left;
+  padding-left: 5%;
+  min-width: 400px;
+}
+/* caption {
   text-align: left;
   font-weight: bold;
-}
+} */
 
 .reservation .cta {
   width: 200px;
@@ -765,7 +854,126 @@ caption {
   color: #487b00;
   border-top: 1px solid #b1b1b1;
 }
+/*################################################################################################################################
+Loin
+##############################################################*/
+.login_body {
+  background-color: #415f03;
+}
+.login {
+  text-align: center;
+  margin-top: 15%;
+ 
 
+}
+
+
+
+
+.login_form_button:hover {
+  background-color: #5F0341;
+  color: white;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.login_form {
+  background-color:#f6fee6 ;
+
+  border: 5px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  /* width: 50%; */
+  margin-left: 25%;
+  margin-right: 25%;
+  min-width: 270px;
+}
+.login_form input, label, button {
+  margin: 10px;
+  text-decoration: none;
+
+}
+.login_form label {
+  max-width: 100px;
+}
+.login_form input {
+  border: 1px solid black;
+  max-width: 200px;
+}
+.login_form_button {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  height: 45px;
+  width: 170px;
+  font-weight: bold;
+
+  
+
+
+  color: white;
+  border-radius: 50px;
+  background-color: #5F0341;
+  border: 0px;
+}
+.login_form_button a {
+  text-decoration: none;
+}
+.login_form_button a:visited {
+  text-decoration: none;
+  color: white;
+}
+.admin__image {
+  padding-top: 5%;
+  height: 25%;
+}
+.res_list_time {
+  width: 50px;
+}
+.res_list_name, .res_list_contact {
+  width: 150px
+}
+.res_list_table_type, .res_list_number {
+  width: 50px;
+}
+/* seznam rezervaci */
+.date-select {
+ color: black;
+}
+.reservation_card table {
+  border: 1px solid black;
+  overflow-x:auto;
+}
+
+.reservation_card table td {
+  border: none;
+}
+.seznam_rezervaci{
+  background-color: #f6fee6;
+}
+
+.pridani_menu {
+  text-align: center;
+}
+.menu_edit_type label {
+  width: 100px;
+  /* height: 100px; */
+
+} .menu_edit_price input, .menu_edit_weight input {
+  width: 50px;
+}
+.menu_edition {
+  overflow-x:auto;
+}
+.menu_edition table td {
+  border: none;
+  background-color: #f6fee6;
+  margin: 5px
+}
+.menu_edition table td input {
+  
+  margin: 5px
+}
+.menu_edit_cta {
+  max-width: 150px;
+  margin-bottom: 50px;
+}
 /*################################################################################################################################
 reservation responsivity
 ################################################################################################################################*/
