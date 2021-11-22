@@ -11,12 +11,10 @@ Basics
 }
 
 html {
-  /* -webkit-box-sizing: border-box;
-          box-sizing: border-box; */
-
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 60%;
-
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 .sub-menu {
 	padding: 10px;
@@ -859,16 +857,21 @@ Loin
 ##############################################################*/
 .login_body {
   background-color: #415f03;
-}
-.login {
-  text-align: center;
-  margin-top: 15%;
- 
-
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
+.login_form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.login_form__wrapper--center {
+  justify-content: center;
+}
 
 .login_form_button:hover {
   background-color: #5F0341;
@@ -882,8 +885,6 @@ Loin
   border-radius: 12px;
   padding: 20px;
   /* width: 50%; */
-  margin-left: 25%;
-  margin-right: 25%;
   min-width: 270px;
 }
 .login_form input, label, button {
