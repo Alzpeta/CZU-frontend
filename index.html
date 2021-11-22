@@ -25,7 +25,7 @@
     <div class="header__topbar">
 
       <nav role="navigation" class="container header__nav">
-        <ul class="nav__ul">
+        <ul class="nav__ul" role=menu>
           <li class="nav__li">
             <a href="index.html" class="nav__link nav__link--current" role="menuitem">Domů</a>
           </li>
@@ -57,14 +57,15 @@
     </div>
 
     <section class="header__hero">
-      <h1 role="banner" class="hero__headline">Restaurace u Leprikona</h1>
+      <h1 class="hero__headline">Restaurace u Leprikona</h1>
       <p class="subheadline hero__subheadline">Bezlepková restaurace se zahrádkou. <br /> Otevřeno od 11 do 22 hodin. Do
         14:00 denní nabídka.</p>
       <p class="subheadline hero__subheadline">Praha – Staroměstské náměstí</p>
-      <img class="subheadline hero__subheadline hero__image" src="images/talire.png" alt="Úvodní obrázek - talíře s jídlem" />
+      <img class="subheadline hero__subheadline hero__image" src="images/talire.png"
+        alt="Úvodní obrázek - talíře s jídlem" />
       <a href="reservation.html" class="cta hero__cta">Rezervace</a>
-      <nav class="sidemenu" role="menuitem">
-        <ul class="nav__ul">
+      <nav class="sidemenu" role="navigation">
+        <ul class="nav__ul" role=menu>
 
           <li class="nav__li">
             <a href="#daily_menu" class="nav__link" role="menuitem">↓ Denní menu</a>
@@ -85,10 +86,11 @@
       <h2 class="headline section_content__headline">Denní menu</h2>
       <h3>Pondělí 1. ledna 1970</h3>
       <div class="table_resp">
+
         <table class="subheadline section_content__subheadline">
-          <th>
-            <h4>Polévky</h4>
-          </th>
+          <tr>
+            <th>Polévky</th>
+          </tr>
           <tr>
             <td class="weight">100g</td>
             <td class="food_name">Čočková</td>
@@ -103,9 +105,9 @@
       </div>
       <div class="table_resp">
         <table class="subheadline section_content__subheadline">
-          <th>
-            <h4>Hlavní jídla</h4>
-          </th>
+          <tr>
+            <th>Hlavní jídla</th>
+          </tr>
           <tr>
             <td class="weight">200g</td>
             <td class="food_name">Nějaký jídlo</td>
@@ -157,7 +159,7 @@
 
     <div class="container container__footer">
       <nav class="footer__nav" role="navigation">
-        <ul class="nav__ul">
+        <ul class="nav__ul" role=menu>
           <li class="nav__li">
             <a href="index.html" class="nav__link  nav__link--current" role="menuitem">Domů</a>
           </li>
