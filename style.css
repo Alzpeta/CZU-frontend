@@ -659,7 +659,13 @@ Contact
   background: url("restaurace.jpg") center center;
   background-size: cover;
 }
-
+.iframe-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 400px !important;
+}
 .map {
   position: relative;
 
