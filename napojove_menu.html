@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Petr Podskalský, Alžběta Pokorná, Richard Markovič, Jan Poláček, Filip Boye-Kofi" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>Nápojové menu | U Leprikona – Bezlepková restaurace Praha</title>
+    <meta name="description" content="Nápojové menu naší bezlepkové restaurace se sídlem na Staroměstském náměstí v Praze. V nabídce i bezlepkové pivo Celia, Ferdinad a Bernard." />
     
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
@@ -19,36 +19,42 @@
 
       <div class="header__topbar">
 
-        <nav class="container header__nav">
+        <nav class="container header__nav"  role="navigation">
           <ul class="nav__ul">
             <li class="nav__li">
-                <a href="index.html" class="nav__link">Domů</a>
+                <a href="index.html" class="nav__link"  role="menuitem">Domů</a>
             </li>
 
             <li class="nav__li">
-                <a href="menu.html" class="nav__link  nav__link--current">Menu</a>
+                <a href="#" class="nav__link subopen nav__link--current"  role="menuitem">Menu</a>
+                <ul class="sub-menu hidden">
+                    <li><a href="stale_menu.html" class="nav__link " role="menuitem">Stálé menu</a></li>
+                    <li><a href="napojove_menu.html" class="nav__link " role="menuitem">Nápojové menu</a></li>
+                  </ul>
             </li>  
 
             <li class="nav__li">
-                <a href="reservation.html" class="nav__link">Rezervace</a>
+                <a href="reservation.html" class="nav__link"  role="menuitem">Rezervace</a>
             </li>              
 
             <li class="nav__li">
-                <a href="aboutus.html" class="nav__link">O nás</a>
+                <a href="aboutus.html" class="nav__link"  role="menuitem">O nás</a>
             </li>
 
             <li class="nav__li">
-                <a href="contact.html" class="nav__link">Kontakt</a>
+                <a href="contact.html" class="nav__link"  role="menuitem">Kontakt</a>
             </li>
           </ul>
+          <script src="submenu_script.js"></script>
+
         </nav>
 
       </div>
 
     </header>
 
-    <main class="main">
-      <section class="section_content" id="daily_menu">
+    <main role="main" class="main">
+      <section class="section_content">
         <h2 class="headline section_content__headline">Nápojové menu</h2>
         <div  class="table_resp">
         <table class="subheadline section_content__subheadline">
@@ -93,36 +99,36 @@
     <footer class="footer" id="footer">
      
       <div class="container container__footer">
-        <nav class="footer__nav">
-          <ul class="nav__ul">
-            <li class="nav__li">
-                <a href="index.html" class="nav__link">Domů</a>
-            </li>
-
-            
-
-            <li class="nav__li">
-                <a href="menu.html" class="nav__link  nav__link--current">Menu</a>
-            </li>
-            <li class="nav__li">
-              <a href="reservation.html" class="nav__link">Rezervace</a>
-          </li>                
-
-            <li class="nav__li">
-                <a href="aboutus.html" class="nav__link">O nás</a>
-            </li>
-
-            <li class="nav__li">
-                <a href="contact.html" class="nav__link">Kontakt</a>
-            </li>
-
-            <li class="nav__li">
-              <a href="contact.html" class="nav__link">Admin</a>
-          </li>
-          </ul>
-        </nav>
+        <nav class="footer__nav" role="navigation">
+            <ul class="nav__ul">
+              <li class="nav__li">
+                <a href="index.html" class="nav__link " role="menuitem">Domů</a>
+              </li>
+              <li class="nav__li">
+                <a href="stale_menu.html" class="nav__link" role="menuitem">Stálé menu</a>
+              </li>
+              <li class="nav__li">
+                <a href="napojove_menu.html" class="nav__link nav__link--current" role="menuitem">Nápojové menu</a>
+              </li>
+    
+              <li class="nav__li">
+                <a href="reservation.html" class="nav__link" role="menuitem">Rezervace</a>
+              </li>
+    
+              <li class="nav__li">
+                <a href="aboutus.html" class="nav__link" role="menuitem">O nás</a>
+              </li>
+    
+              <li class="nav__li">
+                <a href="contact.html" class="nav__link" role="menuitem">Kontakt</a>
+              </li>
+              <li class="nav__li">
+                <a href="login.html" class="nav__link" role="menuitem">Administrace</a>
+              </li>
+            </ul>
+          </nav>
         
-          <div class="footer__copyright">
+          <div class="footer__copyright"  role="contentinfo">
             <p>Jedná se o studenský projekt</p>
             <p>Copyright ©2021</p>
   
