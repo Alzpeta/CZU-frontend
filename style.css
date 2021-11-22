@@ -618,7 +618,7 @@ Team
   width: 100%;
   height: auto;
 
-  background: url("chef.jpg") center center;
+  background: url("images/chef.jpg") center center;
   background-size: cover;
 }
 
@@ -656,7 +656,7 @@ Contact
   width: 100%;
   height: auto;
 
-  background: url("restaurace.jpg") center center;
+  background: url("images/restaurace.jpg") center center;
   background-size: cover;
 }
 .iframe-maps iframe {
