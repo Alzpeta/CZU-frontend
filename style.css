@@ -105,9 +105,8 @@ h4 {
 }
 
 .header__hero,
-.index_menu,
-.pricing,
-.testimonials {
+.section_content
+ {
   padding: 16px;
 }
 
@@ -254,7 +253,7 @@ Header + nav
 Index menu
 ################################################################################################################################*/
 
-.index_menu { /*pro denni menu zobrazovanem primo na uvodni strance*/
+.section_content { /*pro denni menu zobrazovanem primo na uvodni strance*/
   overflow: hidden;
 
   position: relative;
@@ -264,13 +263,13 @@ Index menu
 }
 
 
-.index_menu__headline {
+.section_content__headline {
   padding: 64px 0px 38px 0px;
 
   color: black;
 }
 
-.index_menu__subheadline {
+.section_content__subheadline {
   margin-bottom: 90px;
 
   color: rgba(0, 0, 0, 0.65);

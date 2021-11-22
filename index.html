@@ -26,27 +26,27 @@
       <nav role="navigation" class="container header__nav">
         <ul class="nav__ul">
           <li class="nav__li">
-            <a href="index.html" class="nav__link nav__link--current">Domů</a>
+            <a href="index.html" class="nav__link nav__link--current" role="menuitem">Domů</a>
           </li>
 
           <li class="nav__li ">
-            <a href="#" class="subopen nav__link">Menu</a>
+            <a href="#" class="subopen nav__link" role="menuitem">Menu</a>
             <ul class="sub-menu hidden">
-              <li><a href="stale_menu.html" class="nav__link ">Stálé menu</a></li>
-              <li><a href="napojove_menu.html" class="nav__link ">Nápojové menu</a></li>
+              <li><a href="stale_menu.html" class="nav__link " role="menuitem">Stálé menu</a></li>
+              <li><a href="napojove_menu.html" class="nav__link " role="menuitem">Nápojové menu</a></li>
             </ul>
           </li>
 
           <li class="nav__li">
-            <a href="reservation.html" class="nav__link">Rezervace</a>
+            <a href="reservation.html" class="nav__link" role="menuitem">Rezervace</a>
           </li>
 
           <li class="nav__li">
-            <a href="aboutus.html" class="nav__link">O nás</a>
+            <a href="aboutus.html" class="nav__link" role="menuitem">O nás</a>
           </li>
 
           <li class="nav__li">
-            <a href="contact.html" class="nav__link">Kontakt</a>
+            <a href="contact.html" class="nav__link" role="menuitem">Kontakt</a>
           </li>
         </ul>
         <script src="submenu_script.js"></script>
@@ -60,18 +60,17 @@
       <p class="subheadline hero__subheadline">Bezlepková restaurace se zahrádkou. <br /> Otevřeno od 11 do 22 hodin. Do
         14:00 denní nabídka.</p>
       <p class="subheadline hero__subheadline">Praha – Staroměstské náměstí</p>
-      <!-- <img class="subheadline hero__subheadline hero__image" src="images/pricing/eggplant-basic.svg"/> -->
       <img class="subheadline hero__subheadline hero__image" src="talire1.png" />
       <a href="reservation.html" class="cta hero__cta">Rezervace</a>
-      <nav class="sidemenu">
+      <nav class="sidemenu" role="menuitem">
         <ul class="nav__ul">
 
           <li class="nav__li">
-            <a href="#daily_menu" class="nav__link">↓ Denní menu</a>
+            <a href="#daily_menu" class="nav__link" role="menuitem">↓ Denní menu</a>
           </li>
 
           <li class="nav__li">
-            <a href="#beer_list" class="nav__link nav__link--btn">↓ Čepujeme</a>
+            <a href="#beer_list" class="nav__link nav__link--btn" role="menuitem">↓ Čepujeme</a>
           </li>
         </ul>
       </nav>
@@ -79,13 +78,13 @@
 
   </header>
 
-  <main class="main">
+  <main class="main" role="main">
 
-    <section class="index_menu" id="daily_menu">
-      <h2 class="headline index_menu__headline">Denní menu</h2>
+    <section class="section_content" id="daily_menu">
+      <h2 class="headline section_content__headline">Denní menu</h2>
       <h3>Pondělí 1. ledna 1970</h3>
       <div class="table_resp">
-        <table class="subheadline index_menu__subheadline">
+        <table class="subheadline section_content__subheadline">
           <th>
             <h4>Polévky</h4>
           </th>
@@ -102,7 +101,7 @@
         </table>
       </div>
       <div class="table_resp">
-        <table class="subheadline index_menu__subheadline">
+        <table class="subheadline section_content__subheadline">
           <th>
             <h4>Hlavní jídla</h4>
           </th>
