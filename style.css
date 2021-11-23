@@ -251,7 +251,7 @@ Header + nav
 Index menu
 ################################################################################################################################*/
 
-.section_content { /*pro denni menu zobrazovanem primo na uvodni strance*/
+.section_content { 
   overflow: hidden;
 
   position: relative;
@@ -960,9 +960,13 @@ Loin
 .pridani_menu {
   text-align: center;
 }
+.menu_edition table tr td {
+  min-width: 50px;
+  
+}
 .menu_edit_type label {
   width: 100px;
-  /* height: 100px; */
+
 
 } .menu_edit_price input, .menu_edit_weight input {
   width: 50px;
