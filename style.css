@@ -946,9 +946,10 @@ Loin
 }
 .reservation_card table {
   border: 1px solid black;
+}
+.reservation_card {
   overflow-x:auto;
 }
-
 .reservation_card table td {
   border: none;
 }

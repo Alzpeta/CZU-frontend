@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Petr Podskalský, Alžběta Pokorná, Richard Markovič, Jan Poláček, Filip Boye-Kofi" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>Seznam rezervací</title>
+    <meta name="robots" content="noindex, follow">
     
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
@@ -18,27 +18,26 @@
     <header class="header">
 
       <div class="header__topbar">
-
-        <nav class="container header__nav">
-            <ul class="nav__ul">
-              <li class="nav__li">
-                  <a href="admin_index.html" class="nav__link">Domů</a>
-              </li>
+        <nav class="container header__nav" role="navigation">
+          <ul class="nav__ul" role="menu">
+            <li class="nav__li">
+              <a href="admin_index.html" class="nav__link " role="menuitem">Domů</a>
+            </li>
   
-              <li class="nav__li">
-                  <a href="seznam_rezervaci.html" class="nav__link nav__link--current">Seznam rezervací</a>
-              </li>  
+            <li class="nav__li">
+              <a href="seznam_rezervaci.html" class="nav__link nav__link--current" role="menuitem">Seznam rezervací</a>
+            </li>
   
-              <li class="nav__li">
-                  <a href="buy.html" class="nav__link">Rezervace</a>
-              </li>       
-              <li class="nav__li">
-                <a href="index.html" class="nav__link">Odhlásit se</a>
-            </li>            
+            <li class="nav__li">
+              <a href="tvorba_menu.html" class="nav__link" role="menuitem">Tvorba menu</a>
+            </li>
+            <li class="nav__li">
+              <a href="index.html" class="nav__link" role="menuitem">Odhlásit se</a>
+            </li>
   
-      
-            </ul>
-          </nav>
+  
+          </ul>
+        </nav>
       </div>
 
     </header>
@@ -46,17 +45,15 @@
     <main>
     
     <div class="seznam_rezervaci">
-        <!-- todo vyresit toto -->
-
        
-        <h2 class="headline section_content__headline">Seznam rezervací</h1>
+        <h1 class="headline section_content__headline">Seznam rezervací</h1>
         <form class="subheadline section_content__subheadline date-select"><label>Datum</label><input type="datetime-local"></form>
     </div>
     
 
       
-    <div  class="reservation_card">
-        <table class="subheadline section_content__subheadline">
+    <div  class="reservation_card"> 
+        <table class="subheadline section_content__subheadline ">
           <tr >
             <td rowspan="2" class="res_list_time">18:00</td>
             <td class="res_list_name" >Alžběta Pokorná</td>
@@ -76,7 +73,7 @@
             <td class="res_list_table_type">V prostoru</td>
           </tr>
           <tr>
-            <td class="res_list_contact">podskalskyyyyyyy1111@seznam.cz 123456789</td>
+            <td class="res_list_contact">podskalskyy@seznam.cz 123456789</td>
             <td class="res_list_number">5 osob</td>
           </tr>
         </table>
@@ -97,43 +94,40 @@
     </main>
 
 
-    <footer class="footer" id="footer">
-     
+    <footer class="footer">
+
       <div class="container container__footer">
-        <nav class="footer__nav">
-          <ul class="nav__ul">
+        <nav class="footer__nav" role="navigation">
+          <ul class="nav__ul" role=menu>
             <li class="nav__li">
-                <a href="index.html" class="nav__link">Domů</a>
-            </li>
-
-            
-
-            <li class="nav__li">
-                <a href="menu.html" class="nav__link  nav__link--current">Menu</a>
+              <a href="index.html" class="nav__link" role="menuitem">Domů</a>
             </li>
             <li class="nav__li">
-              <a href="reservation.html" class="nav__link">Rezervace</a>
-          </li>                
-
-            <li class="nav__li">
-                <a href="aboutus.html" class="nav__link">O nás</a>
+              <a href="stale_menu.html" class="nav__link" role="menuitem">Stálé menu</a>
             </li>
-
             <li class="nav__li">
-                <a href="contact.html" class="nav__link">Kontakt</a>
+              <a href="napojove_menu.html" class="nav__link" role="menuitem">Nápojové menu</a>
             </li>
-
+  
             <li class="nav__li">
-              <a href="contact.html" class="nav__link">Admin</a>
-          </li>
+              <a href="reservation.html" class="nav__link" role="menuitem">Rezervace</a>
+            </li>
+  
+            <li class="nav__li">
+              <a href="aboutus.html" class="nav__link" role="menuitem">O nás</a>
+            </li>
+  
+            <li class="nav__li">
+              <a href="contact.html" class="nav__link" role="menuitem">Kontakt</a>
+            </li>
           </ul>
         </nav>
-        
-          <div class="footer__copyright">
-            <p>Jedná se o studenský projekt</p>
-            <p>Copyright ©2021</p>
   
-          </div>
+        <div class="footer__copyright" role="contentinfo">
+          <p>Jedná se o studenský projekt</p>
+          <p>Copyright ©2021</p>
+  
+        </div>
       </div>
     </footer>
   </body>
