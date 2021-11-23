@@ -443,6 +443,14 @@ Footer
           align-self: flex-start;
 }
 
+
+  @media (max-width: 900px) {
+    .footer__nav > .nav__ul {
+    justify-content: center;
+  }
+
+  }
+
 .footer__copyright {
   font-size: 1.5rem;
   line-height: 2.4rem;
@@ -473,7 +481,7 @@ Landing page responsivity
     display: none;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .hero__image {
      /* display: -webkit-box;
   display: -webkit-flex;
