@@ -424,29 +424,31 @@ Footer
   /* display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox; */
-  display:         flex;
+  
 
-  height: 200px;
-  padding-bottom: 32px;
+  max-width: 750px;
+  padding: 0;
 
   /* -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify; */
-          justify-content: space-between;
+          justify-content: start;
 }
 
 .footer__nav {
   /* -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center; */
+  max-width: 800px;
           align-self: flex-start;
 }
 
 .footer__copyright {
   font-size: 1.5rem;
   line-height: 2.4rem;
-  
+  text-align: center;
   color: white;
+  padding: 3.5rem 0;
 
   /* -webkit-align-self: flex-end;
   -ms-flex-item-align: end; */
@@ -523,7 +525,7 @@ Landing page responsivity
   }
 
   .footer__copyright {
-    margin: 32px auto;
+    padding: 32px auto;
 
     text-align: center;
   }
