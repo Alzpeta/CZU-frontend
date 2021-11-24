@@ -734,7 +734,9 @@ reservation
   height: initial;
   background-color:#f6fee6
 }
-
+.reservation_form {
+  overflow-x:auto;
+}
 .reservation__container {
   /* display: -webkit-box;
   display: -webkit-flex;
